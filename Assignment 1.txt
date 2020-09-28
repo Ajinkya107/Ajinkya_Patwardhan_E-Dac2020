@@ -1,0 +1,590 @@
+Program1:
+
+class Javaprogram
+{
+public static void main(String args[])
+{
+System.out.print("Hello WOrld");
+}
+}
+
+Program 2:
+
+public class Addition{
+	public static void main(String args[]){
+
+	int num1 = 74, num2 = 36, sum;
+	sum = num1 + num2;
+
+	System.out.println("Sum of numbers:"+sum);
+
+	}
+}
+
+Program 3:
+
+public class Divide{
+ 
+ public static void main(String[] args) {
+  System.out.println(50/3);
+ }
+ 
+}
+
+Program 4:
+
+public class Test{
+ 
+ public static void main(String[] args) {
+  System.out.println(-5+8*6);
+  System.out.println((55+9)%9);
+  System.out.println(20+ -3*5/8);
+  System.out.println(5+15/3*2 - 8%3);
+ }
+ 
+} 
+
+program 5:
+
+public class Multiply
+{
+
+	public static void main(String args[]){
+
+	int num1=25, num2=5 ,product;
+
+	product=num1*num2;
+	System.out.println("The product is: "+product);
+
+	}
+
+}
+
+program 6:
+
+	import java.util.Scanner;
+ 
+	public class Multiple_method{
+ 
+ 	public static void main(String[] args) {
+  
+	Scanner in = new Scanner(System.in);
+   
+	  System.out.print("Input first number: ");
+	  int num1 = in.nextInt();
+  	 
+  	System.out.print("Input second number: ");
+  	int num2 = in.nextInt();
+   
+ 
+  	System.out.println(num1 + " + " + num2 + " = " + 
+  	(num1 + num2));
+   
+  	System.out.println(num1 + " - " + num2 + " = " + 
+  	(num1 - num2));
+   
+  	System.out.println(num1 + " x " + num2 + " = " + 
+  	(num1 * num2));
+   
+  	System.out.println(num1 + " / " + num2 + " = " + 
+  	(num1 / num2));
+ 
+ 	 System.out.println(num1 + " mod " + num2 + " = " + 
+  	(num1 % num2));
+ 	}
+ 
+}
+
+program 7:
+
+	import java.util.Scanner;
+	public class Table
+	{
+    	public static void main(String[] args) 
+
+    	{
+
+        Scanner s = new Scanner(System.in);
+
+	System.out.print("Enter number:");
+        
+	int n=s.nextInt();
+        for(int i=1; i <= 10; i++)
+        {
+            System.out.println(n+" * "+i+" = "+n*i);
+        }
+    }
+ }
+
+program 8:
+
+	public class Pattern {
+ 
+    	public static void main(String[] args) {
+	
+        System.out.println("   J    a   v     v  a ");
+
+        System.out.println("   J   a a   v   v  a a");
+
+        System.out.println("J  J  aaaaa   V V  aaaaa");
+
+        System.out.println(" JJ  a     a   V  a     a");
+    }
+}
+
+program 9:
+
+	public class Expression{
+ 
+    	public static void main(String[] arg) {
+
+        System.out.println((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5));
+   	 }
+	}
+
+Program 10:
+
+	public class Formula{
+ 
+        public static void main(String[] arg) {
+
+        System.out.println(4.0*(1-(1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11)));
+      }
+    }
+
+Program 11:
+
+	public class Area{
+ 
+   	private static final double radius = 7.5;
+
+    	public static void main(String[] args) {
+
+        double perimeter = 2 * Math.PI * radius;
+
+        double area = Math.PI * radius * radius;
+
+        System.out.println("Perimeter is = " + perimeter);
+
+        System.out.println("Area is = " + area);
+    }
+}
+
+Program 12:
+
+	import java.util.Scanner;
+ 
+`	public class Average{
+ 
+ 	public static void main(String[] args) {
+  	Scanner in = new Scanner(System.in);
+   
+  	System.out.print("Input first number: ");
+  	int num1 = in.nextInt();
+   
+  	System.out.print("Input second number: ");
+  	int num2 = in.nextInt();
+   
+  	System.out.print("Input third number: ");
+  	int num3 = in.nextInt();
+   
+   
+   
+  	System.out.println("Average of three numbers is: " + 
+   	(num1 + num2 + num3) / 3);
+ 	}
+ }
+
+Program 13:
+
+	public class Rectangle{
+ 
+    
+	public static void main(String[] strings) {
+
+        final double width = 5.6;
+        final double height = 8.5;
+
+        double perimeter = 2*(height + width);
+		
+        double area = width * height;			
+		
+	System.out.printf("Perimeter is 2*(%.1f + %.1f) = %.2f \n", height, width, perimeter);
+
+        System.out.printf("Area is %.1f * %.1f = %.2f \n", width, height, area);
+    }
+}
+
+proghram 14:
+
+	public class AmericanFlag{
+ 
+   	public static void main(String[] args)
+    	{
+        System.out.println("* * * * * * ==================================");
+        System.out.println(" * * * * *  ==================================");
+        System.out.println("* * * * * * ==================================");
+        System.out.println(" * * * * *  ==================================");
+        System.out.println("* * * * * * ==================================");
+        System.out.println(" * * * * *  ==================================");
+        System.out.println("* * * * * * ==================================");
+        System.out.println(" * * * * *  ==================================");
+        System.out.println("* * * * * * ==================================");
+        System.out.println("==============================================");
+        System.out.println("==============================================");
+        System.out.println("==============================================");
+        System.out.println("==============================================");
+        System.out.println("==============================================");
+        System.out.println("==============================================");
+   	 }
+}
+
+Program 15:
+
+	public class Swap{
+ 
+	 public static void main(String[] args) {
+     
+   	int a, b, temp;
+   	a = 5;
+   	b = 7;
+   	System.out.println("Before swapping : a, b = "+a+", "+ + b);
+   	temp = a;
+   	a = b;
+   	b = temp;   
+  	sSystem.out.println("After swapping : a, b = "+a+", "+ + b);
+ }
+ }
+
+Program 16: 
+
+	public class Face{
+    	public static void main(String[] args)
+    	{
+        System.out.println(" +\"\"\"\"\"+ ");
+
+        System.out.println("[| o o |]");
+
+        System.out.println(" |  ^  | ");
+
+        System.out.println(" | '-' | ");
+
+        System.out.println(" +-----+ ");
+    	}
+   }
+
+Program 17:
+	
+	import java.util.Scanner;
+	public class BinaryAddition{
+
+   	public static void main(String[] args)
+   	{
+	 
+	long b1, b2;
+
+	int i = 0, carry = 0;
+
+	
+	int[] sum = new int[10];
+
+	
+	Scanner scanner = new Scanner(System.in);
+
+	System.out.print("Enter first binary number: ");
+
+	b1 = scanner.nextLong();
+
+	System.out.print("Enter second binary number: ");
+
+	b2 = scanner.nextLong();
+
+	
+	scanner.close();
+
+	while (b1 != 0 || b2 != 0) 
+	{
+		sum[i++] = (int)((b1 % 10 + b2 % 10 + carry) % 2);
+
+		carry = (int)((b1 % 10 + b2 % 10 + carry) / 2);
+
+		b1 = b1 / 10;
+
+		b2 = b2 / 10;
+	}
+	if (carry != 0) {
+
+		sum[i++] = carry;
+
+	}
+	--i;
+
+	System.out.print("Output: ");
+
+	while (i >= 0) {
+
+		System.out.print(sum[i--]);
+
+	}
+	System.out.print("\n");  
+   }
+}
+
+Program 18:
+
+	import java.util.Scanner;
+
+	public class BinaryMultiplication{
+
+	 public static void main(String[] args)
+	 {
+  	long binary1, binary2, multiply = 0;
+
+  	int digit, factor = 1;
+	  Scanner in = new Scanner(System.in);
+ 	 System.out.print("Input the first binary number: ");
+  	binary1 = in.nextLong();
+  	System.out.print("Input the second binary number: ");
+  	binary2 = in.nextLong();
+  	while (binary2 != 0)
+  {
+   digit = (int)(binary2 % 10);
+   if (digit == 1) 
+   {
+    binary1 = binary1 * factor;
+    multiply = binaryproduct((int) binary1, (int) multiply);
+   } 
+   else
+   {
+    binary1 = binary1 * factor;
+   }
+   binary2 = binary2 / 10;
+   factor = 10;
+  }
+  System.out.print("Product of two binary numbers: " + multiply+"\n");
+ }
+ static int binaryproduct(int binary1, int binary2) 
+ {
+  int i = 0, remainder = 0;
+  int[] sum = new int[20];
+  int binary_prod_result = 0;
+
+  while (binary1 != 0 || binary2 != 0) 
+  {
+   sum[i++] = (binary1 % 10 + binary2 % 10 + remainder) % 2;
+   remainder = (binary1 % 10 + binary2 % 10 + remainder) / 2;
+   binary1 = binary1 / 10;
+   binary2 = binary2 / 10;
+  }
+  if (remainder != 0)
+  {
+   sum[i++] = remainder;
+  }
+  --i;
+  while (i >= 0) 
+  {
+   binary_prod_result = binary_prod_result * 10 + sum[i--];
+  }
+  return binary_prod_result;
+ }
+ }
+ 
+
+Program 19:
+
+	import java.util.Scanner;
+	public class Decimal{
+      public static void main(String args[])
+    	{
+        int dec_num, quot, i=1, j;
+        int bin_num[] = new int[100];
+        Scanner scan = new Scanner(System.in);
+		
+        System.out.print("Input a Decimal Number : ");
+        dec_num = scan.nextInt();
+		
+        quot = dec_num;
+		
+        while(quot != 0)
+        {
+            bin_num[i++] = quot%2;
+            quot = quot/2;
+        }
+		
+        System.out.print("Binary number is: ");
+        for(j=i-1; j>0; j--)
+        {
+            System.out.print(bin_num[j]);
+        }
+        System.out.print("\n");
+    }
+}
+
+Program 20:
+
+	import java.util.Scanner;
+	public class Hexadecimal{
+      public static void main(String args[])
+    	{
+        int dec_num, rem;
+        String hexdec_num="";
+        
+                
+        char hex[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+        
+        Scanner in = new Scanner(System.in);
+		
+        System.out.print("Input a decimal number: ");
+        dec_num = in.nextInt();
+		
+        while(dec_num>0)
+        {
+            rem = dec_num%16;
+            hexdec_num = hex[rem] + hexdec_num;
+            dec_num = dec_num/16;
+        }
+        System.out.print("Hexadecimal number is : "+hexdec_num+"\n");         
+    }
+}
+
+Program 21:
+
+	import java.util.Scanner;
+	class DecimalToOctalExample
+	{
+  	public static void main(String args[])
+  	{
+    	Scanner input = new Scanner( System.in );
+    	System.out.print("Enter a decimal number : ");
+   	 int num =input.nextInt();
+ 
+
+    	int rem;
+ 
+    	String str=""; 
+ 
+    
+    	char dig[]={'0','1','2','3','4','5','6','7'};
+ 
+    	while(num>0)
+    	{
+       	rem=num%8; 
+       	str=dig[rem]+str; 
+       	num=num/8;
+    	}
+    System.out.println("Method 2: Decimal to octal: "+str);
+  }
+}
+
+Program 22:
+
+	import java.util.Scanner;
+	class BinaryToDecimal {
+    	public static void main(String args[]){
+       Scanner input = new Scanner( System.in );
+       System.out.print("Enter a binary number: ");
+       String binaryString =input.nextLine();
+       System.out.println("Output: "+Integer.parseInt(binaryString,2));
+    	}
+}	
+
+Program 23:
+
+	import java.util.Scanner;
+	public class BinToHex{
+ 	public static void main(String[] args) 
+ 	{
+  	int[] hex = new int[1000];
+
+  	int i = 1, j = 0, rem, dec = 0, bin;
+  	Scanner in = new Scanner(System.in);
+  	System.out.print("Input a Binary Number: ");
+  	bin = in.nextInt();
+  	while (bin > 0) {
+   	rem = bin % 2;
+   	dec = dec + rem * i;
+   	i = i * 2;
+   	bin = bin / 10;
+  	}
+   	i = 0;
+  	while (dec != 0) {
+   	hex[i] = dec % 16;
+   	dec = dec / 16;
+   	i++;
+  }
+  	System.out.print("HexaDecimal value: ");
+  	for (j = i - 1; j >= 0; j--)
+  {
+   	if (hex[j] > 9) 
+   {
+    System.out.print((char)(hex[j] + 55)+"\n");
+   } else
+   {
+    System.out.print(hex[j]+"\n");
+   }
+  }
+ }
+}
+
+Program 24:
+
+import java.util.*;
+public class BinToOctal{
+public static void main(String[] args) 
+    {
+        int binnum, binnum1,rem, decnum=0, quot, i=1, j;
+        int octnum[] = new int[100];
+        Scanner scan = new Scanner(System.in);
+		System.out.print("Input a Binary Number : ");
+        binnum = scan.nextInt();
+        binnum1=binnum;
+     
+      while(binnum > 0)
+        {
+            rem = binnum % 10;
+            decnum = decnum + rem*i;
+            //System.out.println(rem);
+            i = i*2;
+            binnum = binnum/10;
+        }   
+
+		i=1;
+        quot = decnum;
+		
+        while(quot > 0)
+        {
+            octnum[i++] = quot % 8;
+            quot = quot / 8;
+        }
+		
+        System.out.print("Equivalent Octal Value of " +binnum1+ " is :");
+        for(j=i-1; j>0; j--)
+        {
+            System.out.print(octnum[j]);
+        }
+ System.out.print("\n");
+ 
+    }
+}
+
+Program 25:
+
+	import java.util.Scanner;
+
+	public class oct_Dec {
+ 
+	public static void main(String[] args) 
+   	{
+     	Scanner in = new Scanner(System.in);
+     	long octal_num, decimal_num = 0;
+     	int i = 0;
+     	System.out.print("Input any octal number: ");
+    	octal_num = in.nextLong();
+    	while (octal_num != 0) 
+     {
+      decimal_num = (long)(decimal_num + (octal_num % 10) * Math.pow(8, i++));
+      octal_num = octal_num / 10;
+     }
+    System.out.print("Equivalent decimal number: " + decimal_num+"\n");
+   }
+}
