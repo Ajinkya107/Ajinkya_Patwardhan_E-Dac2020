@@ -1,0 +1,271 @@
+1. Write a program to merge two arrays of integers by reading one number at a time from each array
+until one of the array is exhausted, and then concatenating the remaining numbers.
+Input: [23,60,94,3,102] and [42,16,74]
+Output: [23,42,60,16,94,74,3,102]
+
+import java.util.*;
+class MergeArray{
+	public static void main(String args[])
+	{
+
+
+
+
+    Scanner sc=new Scanner(System.in);
+   System.out.println("Enter the  array 1");
+   int n=sc.nextInt();
+	int i;
+   int arr[]= new int[n];
+
+   System.out.println("Enter the element of array 2");
+   int n1=sc.nextInt();
+   int arr1[]= new int[n1];
+
+   System.out.println("enter the elements of array1");
+   for(i=0;i<n;i++)
+	{
+	 arr[i]=sc.nextInt();
+	}
+  
+
+   System.out.println("enter the elements of array2");
+   for(i=0;i<n1;i++)
+	{
+	 arr1[i]=sc.nextInt();
+	}
+
+ 	int n3=n+n1;
+	int arr2[]= new int[n3];
+      int count=0;int num=0;
+	
+	while(num<n3)
+	{
+	  if(count<n)
+	{
+	 arr2[num]=arr[count];
+	 num++;
+	
+	}
+	if(count<n1)
+	{
+	 arr2[num]=arr1[count];
+	 num++;
+	
+	}
+	count++;
+	}
+   
+		for(i=0;i<n3;i++){			
+		System.out.print(arr2[i]+" ");		
+		}
+
+}
+}
+
+//2.wap which takes array of integers and print running average of three consecutive integers,in case of array fewer than 3 integers no output
+
+import java.util.*;
+class Array_avg
+    {
+
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the length of array ");
+		int n=sc.nextInt();
+		int a[]=new int[n];
+	
+		System.out.println("Enter the number of elements in array");
+		for(int k=0;k<a.length;k++)
+		{	
+		 a[k]=sc.nextInt();
+		}
+		 int i=0;
+
+		while(i<a.length-1)
+		{
+		 int c=i;
+		 int sum=0;
+		if(i+2<=a.length-1)
+		{
+			while(c<=i+2)
+			{
+			sum=sum+a[c];
+			c++;
+			}
+			System.out.println("Avg is "+(sum/3));	
+
+		
+		}
+		else
+		{
+		break;
+		}
+		i++;
+	}	  	
+		
+	}
+
+
+	}
+
+
+//3. wap which generates series 1,4,27,16,25,125,36
+
+import java.util.*;
+class Series{
+
+	public static void main(String args[])
+	{
+	  Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter the numbers");
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		int c=1;
+		for(int i=0;i<n;i++)
+		{
+		 if(c%2==0)
+		{
+		a[i]=c*c;
+		c++;
+	 
+		}
+		else 
+		{
+		 a[i]=c*c*c;
+		c++;
+		 
+		}
+
+		
+	
+		 		
+               }
+		for(int m:a)
+		{
+		System.out.println(m+" ");
+
+		}
+		
+		
+		
+
+				
+		
+	
+	}
+
+
+
+}
+
+//4.wap to print which checks array of integers in ascending descending or random.
+
+import java.util.*;
+class Array_ascdec
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the elements of array");
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		int dec=1; int asc=1;
+		for(int i=0;i<a.length;i++)
+		{
+		 a[i]=sc.nextInt();
+		}
+
+		
+	
+
+		for(int i=0;i<n;i++)
+		{
+			for(int j=i;j<n-1;j++)
+			{
+			  if(a[i]>=a[j])
+				dec++;
+			   else if(a[i]<=a[j])
+				asc++;
+	
+			}
+	
+
+		}
+		if(dec==n | asc==n)
+		{
+			if(dec>asc)
+			System.out.println("Numbers in descending ");
+			else
+			System.out.println("Numbers in ascending ");
+		}
+
+
+	   
+		else
+		{
+			System.out.println("Numbers in random format");
+		}
+		
+
+		
+		
+	}
+
+
+
+
+}
+//5.find the third largest number in array:
+
+package Day7;
+import java.util.*;
+class ThirdLargest{
+    public static void main(String args[])
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the array value");
+           int n=sc.nextInt();
+           int a[]= new int[n];
+           int largest=0; int second=0; int third=0;
+           for(int i=0;i<n;i++)
+           {
+              a[i]=sc.nextInt();
+           }
+           for(int i=0;i<n;i++)
+           {
+               if(largest<a[i])
+           {
+                      second=largest;
+                     largest = a[i];
+           }          
+               else if(a[i]>second && a[i]!=largest)
+               {
+                   third=second;
+                   second=a[i];
+               }
+               else if(a[i]>third && (a[i]!=largest && a[i]!=second))
+               {
+                   third=a[i];
+               }
+               
+               
+           
+          
+           }
+           System.out.println("The third largest no is:"+third);
+           
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
