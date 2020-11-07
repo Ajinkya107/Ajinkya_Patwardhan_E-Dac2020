@@ -1,0 +1,252 @@
+
+//1)WAP to define a class Student with attributes rollno, name , 
+	//marks accept data for 2 objects and display them.
+
+import java.util.*;
+class Student1
+{
+	public static void main(String args[])
+	{
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter the rollno");
+	int r1=sc.nextInt();
+	System.out.println("Enter the name");
+	 String s1=sc.next();
+	System.out.println("Enter the marks");
+	 double m1=sc.nextDouble();
+		
+	 Student c1=new Student(r1,s1,m1);
+	 c1.display();
+	Student c2 = new Student(2,"Ramanand",75.5);
+	c2.display();
+	
+	}
+}
+
+class Student{
+
+	int rollNo;
+	String name;
+	double marks;
+  
+	Student(int r,String s, double m)
+	{
+	 rollNo=r;
+	 name=s;
+	 marks=m;
+
+	}
+
+
+	void display()
+	{
+	 System.out.println(rollNo);
+         System.out.println(name);
+	 System.out.println(marks);
+	
+	}
+
+2)WAP to define a class Book with attributes id, name , 
+price accept data for 5 objects display book with highest price.
+
+
+import java.util.Scanner;
+
+
+class Book
+{
+ 
+   Scanner input = new Scanner(System.in);
+
+    int bookid,price;
+  
+  String name;
+       
+ void getdata()
+ 
+       {
+            
+System.out.println("Enter the Name of book");
+          
+  name=input.nextLine();
+           
+ System.out.println("Enter the Book Id");
+           
+ bookid=input.nextInt();
+          
+  System.out.println("Enter the Price");
+           
+ price=input.nextInt();
+       
+ 
+}
+
+
+}
+
+public class BookDemo
+{
+
+  
+  void compare(Book b1,Book b2,Book b3)
+   
+ {
+        i
+f (b1.price>b2.price && b1.price>b3.price)
+       
+ {
+            
+  System.out.println("Book with highest price: "+b1.name);
+
+       
+ }
+else if(b2.price>b3.price)
+        
+{
+           
+ System.out.println("Book with highest price: "+b2.name);
+       
+ }
+else
+       
+ {
+            
+System.out.println("Book with highest price: "+b3.name);
+       
+ }
+
+   
+ }
+
+    
+public static void main(String[] args) 
+{
+        
+Book b1= new Book();
+       
+ b1.getdata();
+        
+Book b2=new Book();
+       
+ b2.getdata();
+      
+  Book b3 = new Book();
+      
+  b3.getdata();
+
+        
+BookDemo demo=new BookDemo();
+
+       
+ demo.compare(b1,b2,b3);
+
+    
+}
+
+}
+
+//3)WAP to define a class Bank accept customerid, name, balance write method  
+	to perform deposit, checkbal, withdraw keep min balance 1000.
+
+
+package Day4;
+import java.util.*;
+class Banking1{
+
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to the bank");
+        System.out.println("Enter the option you want to choose");
+        char ans;
+        do{
+            
+            System.out.println("1.Deposit\n 2.Withdraw \n 3.MinBalance \n 4.CheckBalance\n ");
+            Bank p = new Bank();
+            int ch = sc.nextInt();
+            switch (ch){
+                case 1:
+                    System.out.println("Enter the amount to be deposited");
+                    double m = sc.nextDouble();
+                    p.deposit(m);
+                    break;
+                    
+                case 2:
+                      
+                     System.out.print("ENTER AMMOUT TO BE WITHDRAW   :");
+                     double n=sc.nextInt();
+                     double q=p.withdraw(n);
+                     if(q<=500){
+                          System.out.println("YOUR ACCOUT BALANCE LOWER YHAN 500 OR EQUAL TO 500 ");
+                        
+                     }
+                     else
+                     {
+                          System.out.println("YOUR WITHDRAW AMMOUT SUCCESSFUL");
+                          System.out.println("YOUR ACCOUNT REMANING BALANCE  : "+q+" RS");
+                     }
+                      break;
+                      
+            case 3:
+                    p.minbal();
+                    break;
+                    
+            case 4:
+                 double r =p.checkbal();
+                 System.out.println("Your account balance is "+r+" RS ");
+                 break;
+                 
+             default:
+                System.out.println("Inavlid choice is entered");
+                break;
+                }
+            System.out.println("Do you wanna continue Y/N");
+            ans=sc.next().charAt(0);
+            
+            
+        }while(ans=='y' || ans=='Y');
+       
+        
+    }
+
+
+ static class Bank{
+    private int minBal=500;
+    private double bal=0;
+  static private double deposite=0;
+    
+    
+    void minbal(){
+    
+        System.out.println("MINIMUM BALANCE LIMIT IS    : "+minBal+" RS");
+    }
+    
+    void deposit( double m){
+    deposite = m+deposite;
+    System.out.println("Your amount is been deposited "+deposite);
+    bal=deposite;
+    
+    
+    }
+    
+   double withdraw(double n){
+        deposite = deposite-n ;
+        bal =deposite;
+        return bal;
+    
+    }
+   
+    double checkbal(){
+        return bal;
+        
+    }
+   
+   
+   
+    
+    
+}
+}
+
+//4)WAP to define a class Employee with attributes id, name ,designation  accept data for 
+	5 objects and display employee details whose designation is Manager.
