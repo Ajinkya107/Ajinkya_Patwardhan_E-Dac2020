@@ -1,0 +1,44 @@
+ Part 1. I have written a c+ + code which can open a csv file. Below is the code.
+ 
+ #include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+	ifstream myFile;
+	myFile.open("test.csv");
+
+	while(myFile.good()){
+	 string line;
+	getline(myFile, line, ',');
+	cout<<line<<endl ;
+
+	}
+
+}
+
+
+
+Part 2.  I have also written a c+ + code wherein I can write the contents on command prompt.
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+	fstream myFile;
+	myFile.open("test1.csv",ios::out);//write mode
+	if(myFile.is_open()) {
+	   myFile<<"Hello\n";
+	   myFile<<"This is second line\n";
+           myFile.close();
+
+
+	}
+
+
+
+}
